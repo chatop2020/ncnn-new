@@ -456,6 +456,9 @@ enum ImwriteFlags
 
 NCNN_EXPORT bool imwrite(const std::string& path, const Mat& m, const std::vector<int>& params = std::vector<int>());
 NCNN_EXPORT unsigned char* imwrite(int* len, const Mat& m);
+NCNN_EXPORT void imshow(const std::string& name, const Mat& m);
+
+NCNN_EXPORT int waitKey(int delay = 0);
 
 #if NCNN_PIXEL
 NCNN_EXPORT void resize(const Mat& src, Mat& dst, const Size& size, float sw = 0.f, float sh = 0.f, int flags = 0);
